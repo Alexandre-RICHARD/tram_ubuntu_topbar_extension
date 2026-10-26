@@ -20,7 +20,7 @@ const DEPARTURE = {
     stopId: '1BBCA',
 };
 const LINE_LABEL = 'B';
-const DEPARTURE_COUNT = 2;
+const DEPARTURE_COUNT = 1;
 
 const FETCH_INTERVAL_SECONDS = 30;
 const RENDER_INTERVAL_SECONDS = 10;
@@ -75,7 +75,7 @@ export default class TramExtension extends Extension {
         // Clic : rafraîchissement immédiat
         this._button.connect('clicked', () => this._fetch());
 
-        Main.panel._rightBox.insert_child_at_index(this._button, 0);
+        Main.panel._centerBox.insert_child_at_index(this._button, 0);
 
         this._fetch();
         this._fetchTimerId = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, FETCH_INTERVAL_SECONDS, () => {
