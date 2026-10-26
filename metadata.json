@@ -1,0 +1,10 @@
+{
+  "uuid": "tram-b@custom",
+  "name": "Tram B",
+  "description": "Prochains départs du tram B à Belle-Beille Campus, direction Monplaisir",
+  "shell-version": [
+    "45",
+    "46"
+  ],
+  "version": 1
+}

@@ -1,0 +1,44 @@
+.tram-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin: 0;
+  transition-duration: 150ms;
+}
+
+.tram-button:hover,
+.tram-button:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tram-button:active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.tram-box {
+  spacing: 8px;
+}
+
+/* Pastille de ligne, comme LineBadge sur la carte du site : couleur officielle Irigo de la ligne B */
+.tram-line-badge {
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background-color: #00569D;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tram-departures {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Flux injoignable depuis plusieurs minutes : prévisions sans doute dépassées */
+.tram-stale .tram-departures {
+  color: rgba(255, 255, 255, 0.5);
+}
